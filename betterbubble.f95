@@ -20,7 +20,7 @@ program betterbubble
     print*, 'Enter input file: '
     read(*,*) InFile
     open(42,file=InFile)
-    open(13,file=('sort' // trim(InFile)))
+    open(13,file=('Output.txt'))
 
     ! Skip a header line
     read(42,*)
